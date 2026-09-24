@@ -1,0 +1,19 @@
+﻿# Environment variables
+**/.env
+**/.env.*
+!.env.example
+
+# Google OAuth credentials
+**/token.json
+
+# Python
+**/__pycache__/
+*.pyc
+**/venv/
+**/.venv/
+
+# Node
+**/node_modules/
+
+# Local databases
+**/*.sqlite3

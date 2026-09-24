@@ -1,0 +1,81 @@
+{
+    "report_id": "8ab9bda8-5c6f-4f4a-a0fe-ba7d8f3a6eef",
+    "stored_at": "2026-09-01T08:23:10.829148+00:00",
+    "sha256": "fab0d67475df49d05f64f4b14e03d9a4d2cbeca4cc27c28467e5544cfc3b62d5",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-01T08:23:10.828698+00:00",
+            "filename": "threatbye_test_email (1).eml"
+        },
+        "email_information": {
+            "sender": "security-alert@example.test",
+            "recipient": null,
+            "subject": "Urgent Account Verification",
+            "date": "Sun, 30 Aug 2026 13:00:00 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "http://example.test/verify"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "example.test"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "unknown",
+                "dkim": "unknown",
+                "dmarc": "unknown",
+                "raw_authentication_results": []
+            },
+            "status": "unknown",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "http://example.test/verify",
+                    "domain": "example.test",
+                    "scheme": "http",
+                    "path": "/verify",
+                    "has_https": false
+                }
+            ],
+            "domains": [
+                "example.test"
+            ],
+            "ip_addresses": [],
+            "total_urls": 1,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "status": "not_connected",
+                "message": "External threat-intelligence providers will be integrated in the next stage."
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "suspicious",
+            "confidence": 0.5239
+        },
+        "risk_assessment": {
+            "score": 50,
+            "level": "MEDIUM",
+            "reasons": [
+                "Threat detection indicators found (base score: 45)",
+                "1 URL(s) detected"
+            ],
+            "recommendation": "Exercise caution. Verify the sender and email links before taking action."
+        }
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "report_id": "5fc19dbf-26ed-4bf5-8d10-fec687e1e89f",
+    "stored_at": "2026-09-04T14:28:51.734149+00:00",
+    "sha256": "8954b293772f20272959d533527992d6665863d87ba792eee6f8b90a62fb664a",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-04T14:28:51.733777+00:00",
+            "filename": "gmail_1a06179704b22cea.eml"
+        },
+        "email_information": {
+            "sender": "community@virustotal.com",
+            "recipient": null,
+            "subject": "VirusTotal Community account activation",
+            "date": "Wed, 02 Sep 2026 02:35:43 -0700"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://www.virustotal.com/gui/account-activation/aXRzemFpbWRvY2tlcnx8djN8fDE3ODgzNDE3NDN8fDkyNmQ5MzI2NjMxNTMwZGUyNGI3MTZlYTRjODY0YjM2YTBmNmZiMTFlZDJiNDA2OWUwMzJjOWU5M2VlZTU5OGE."
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "www.virustotal.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@virustotal.com header.s=google header.b=SfpZd5bs;       spf=pass (google.com: domain of 37-2xag8baiy5s1423y3kvmvy4nkzzsn.qyyqvo42o1myx3ox3.myw@m3kw2wvrgufz5godrsrytgd7.apphosting.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=37-2Xag8bAIY5s1423y3kvmvy4nkzzsn.qyyqvo42o1myx3ox3.myw@M3KW2WVRGUFZ5GODRSRYTGD7.apphosting.bounces.google.com;       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=virustotal.com;       dara=pass header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://www.virustotal.com/gui/account-activation/aXRzemFpbWRvY2tlcnx8djN8fDE3ODgzNDE3NDN8fDkyNmQ5MzI2NjMxNTMwZGUyNGI3MTZlYTRjODY0YjM2YTBmNmZiMTFlZDJiNDA2OWUwMzJjOWU5M2VlZTU5OGE.",
+                    "domain": "www.virustotal.com",
+                    "scheme": "https",
+                    "path": "/gui/account-activation/aXRzemFpbWRvY2tlcnx8djN8fDE3ODgzNDE3NDN8fDkyNmQ5MzI2NjMxNTMwZGUyNGI3MTZlYTRjODY0YjM2YTBmNmZiMTFlZDJiNDA2OWUwMzJjOWU5M2VlZTU5OGE.",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "www.virustotal.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 1,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "https://www.virustotal.com/gui/account-activation/aXRzemFpbWRvY2tlcnx8djN8fDE3ODgzNDE3NDN8fDkyNmQ5MzI2NjMxNTMwZGUyNGI3MTZlYTRjODY0YjM2YTBmNmZiMTFlZDJiNDA2OWUwMzJjOWU5M2VlZTU5OGE.",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "www.virustotal.com",
+                        "status": "success",
+                        "reputation": 266,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 32,
+                            "harmless": 58,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 58,
+                        "undetected": 32
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "suspicious",
+            "confidence": 0.6334
+        },
+        "risk_assessment": {
+            "score": 25,
+            "level": "LOW",
+            "reasons": [
+                "Threat detection indicators found (base score: 10)",
+                "1 URL(s) detected",
+                "ML model detected suspicious characteristics (confidence: 0.63)"
+            ],
+            "recommendation": "Some suspicious indicators were detected. Review the email carefully."
+        }
+    }
+}

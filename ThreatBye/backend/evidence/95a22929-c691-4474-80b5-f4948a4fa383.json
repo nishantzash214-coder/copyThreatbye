@@ -1,0 +1,135 @@
+{
+    "report_id": "95a22929-c691-4474-80b5-f4948a4fa383",
+    "stored_at": "2026-09-16T08:52:57.862908+00:00",
+    "sha256": "59ea2f0ee183895b3d04ed0c846dd13c5cbc3ddfed5fe15242af8a07d19f76db",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-16T08:52:57.862384+00:00",
+            "filename": "gmail_1a0952a7dcd38a33.eml"
+        },
+        "email_information": {
+            "sender": "Unknown IITians <desk@unknowniitians.com>",
+            "recipient": null,
+            "subject": "End Term: Minimum Score You Need to PASS !",
+            "date": "Sat, 12 Sep 2026 15:59:29 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/foundation/marks-predictor",
+                "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/diploma/marks-predictor",
+                "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/degree/marks-predictor"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "www.unknowniitians.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@unknowniitians.com header.s=ui header.b=DTBrDx6y;       arc=pass (i=3 spf=pass spfdomain=unknowniitians.com dkim=pass dkdomain=unknowniitians.com dmarc=pass fromdomain=unknowniitians.com);       spf=pass (google.com: domain of ui-announcements-21+bncbdhl7wxoymnbbf6tstkqmgqedhv2xfi@unknowniitians.com designates 209.85.220.77 as permitted sender) smtp.mailfrom=ui-announcements-21+bncBDHL7WXOYMNBBF6TSTKQMGQEDHV2XFI@unknowniitians.com;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=unknowniitians.com;       dara=neutral header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/foundation/marks-predictor",
+                    "domain": "www.unknowniitians.com",
+                    "scheme": "https",
+                    "path": "/exam-preparation/iitm-bs/tools/data-science/foundation/marks-predictor",
+                    "has_https": true
+                },
+                {
+                    "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/diploma/marks-predictor",
+                    "domain": "www.unknowniitians.com",
+                    "scheme": "https",
+                    "path": "/exam-preparation/iitm-bs/tools/data-science/diploma/marks-predictor",
+                    "has_https": true
+                },
+                {
+                    "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/degree/marks-predictor",
+                    "domain": "www.unknowniitians.com",
+                    "scheme": "https",
+                    "path": "/exam-preparation/iitm-bs/tools/data-science/degree/marks-predictor",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "www.unknowniitians.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 3,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/foundation/marks-predictor",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/diploma/marks-predictor",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://www.unknowniitians.com/exam-preparation/iitm-bs/tools/data-science/degree/marks-predictor",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "www.unknowniitians.com",
+                        "status": "success",
+                        "reputation": 0,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 34,
+                            "harmless": 55,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 55,
+                        "undetected": 34
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "benign",
+            "confidence": 0.5221
+        },
+        "risk_assessment": {
+            "score": 25,
+            "level": "LOW",
+            "reasons": [
+                "Threat detection indicators found (base score: 10)",
+                "3 URL(s) detected"
+            ],
+            "recommendation": "Some suspicious indicators were detected. Review the email carefully."
+        }
+    }
+}

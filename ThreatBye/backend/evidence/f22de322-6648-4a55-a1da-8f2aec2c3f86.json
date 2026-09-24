@@ -1,0 +1,96 @@
+{
+    "report_id": "f22de322-6648-4a55-a1da-8f2aec2c3f86",
+    "stored_at": "2026-09-02T09:46:42.147777+00:00",
+    "sha256": "50301e6032a60c51721c067f28a1612b4639492fd7e9e0b96611a4ca58c49dfe",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-02T09:46:42.147094+00:00",
+            "filename": "threatbye_test_email (1).eml"
+        },
+        "email_information": {
+            "sender": "security-alert@example.test",
+            "recipient": null,
+            "subject": "Urgent Account Verification",
+            "date": "Sun, 30 Aug 2026 13:00:00 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "http://example.test/verify"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "example.test"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "unknown",
+                "dkim": "unknown",
+                "dmarc": "unknown",
+                "raw_authentication_results": []
+            },
+            "status": "unknown",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "http://example.test/verify",
+                    "domain": "example.test",
+                    "scheme": "http",
+                    "path": "/verify",
+                    "has_https": false
+                }
+            ],
+            "domains": [
+                "example.test"
+            ],
+            "ip_addresses": [],
+            "total_urls": 1,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "http://example.test/verify",
+                        "status": "error",
+                        "message": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "example.test",
+                        "status": "error",
+                        "message": "HTTPSConnectionPool(host='www.virustotal.com', port=443): Max retries exceeded with url: /api/v3/domains/example.test (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.virustotal.com', port=443) at 0x2d7c867f890>, 'Connection to www.virustotal.com timed out. (connect timeout=15)'))"
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "suspicious",
+            "confidence": 0.5239
+        },
+        "risk_assessment": {
+            "score": 50,
+            "level": "MEDIUM",
+            "reasons": [
+                "Threat detection indicators found (base score: 45)",
+                "1 URL(s) detected"
+            ],
+            "recommendation": "Exercise caution. Verify the sender and email links before taking action."
+        }
+    }
+}

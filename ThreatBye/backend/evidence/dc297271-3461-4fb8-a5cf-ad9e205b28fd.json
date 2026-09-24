@@ -1,0 +1,152 @@
+{
+    "report_id": "dc297271-3461-4fb8-a5cf-ad9e205b28fd",
+    "stored_at": "2026-09-16T08:58:31.700219+00:00",
+    "sha256": "7bf33aebca986aa9e2756a984de9621c6befddce52028e5f5f44f795ee5cf6f1",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-16T08:58:31.699138+00:00",
+            "filename": "gmail_1a0a961cab5c563c.eml"
+        },
+        "email_information": {
+            "sender": "Google <no-reply@accounts.google.com>",
+            "recipient": null,
+            "subject": "Security alert",
+            "date": "Wed, 16 Sep 2026 08:42:31 +0000"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://accounts.google.com/AccountChooser?Email=anyadi2580@gmail.com&continue=https://myaccount.google.com/alert/nt/1789548151016?rfn%3D325%26rfnc%3D1%26eid%3D7732830869688117748%26et%3D0",
+                "https://myaccount.google.com/notifications"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "accounts.google.com",
+                "myaccount.google.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@accounts.google.com header.s=20260707 header.b=vV7viv+g;       spf=pass (google.com: domain of 3evaqaggtciwvw-zmxtgikkwcvba.owwotm.kwuivgilqknqiouiqt.kwu@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3eVaqaggTCiwVW-ZMXTgIKKWcVba.OWWOTM.KWUIVgILQknqiOUIQT.KWU@gaia.bounces.google.com;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com;       dara=pass header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://accounts.google.com/AccountChooser?Email=anyadi2580@gmail.com&continue=https://myaccount.google.com/alert/nt/1789548151016?rfn%3D325%26rfnc%3D1%26eid%3D7732830869688117748%26et%3D0",
+                    "domain": "accounts.google.com",
+                    "scheme": "https",
+                    "path": "/AccountChooser",
+                    "has_https": true
+                },
+                {
+                    "url": "https://myaccount.google.com/notifications",
+                    "domain": "myaccount.google.com",
+                    "scheme": "https",
+                    "path": "/notifications",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "accounts.google.com",
+                "myaccount.google.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 2,
+            "total_domains": 2,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "https://accounts.google.com/AccountChooser?Email=anyadi2580@gmail.com&continue=https://myaccount.google.com/alert/nt/1789548151016?rfn%3D325%26rfnc%3D1%26eid%3D7732830869688117748%26et%3D0",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://myaccount.google.com/notifications",
+                        "status": "success",
+                        "reputation": 0,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 31,
+                            "harmless": 59,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 59,
+                        "undetected": 31
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "accounts.google.com",
+                        "status": "success",
+                        "reputation": -34,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 32,
+                            "harmless": 57,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 57,
+                        "undetected": 32
+                    },
+                    {
+                        "domain": "myaccount.google.com",
+                        "status": "success",
+                        "reputation": 55,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 32,
+                            "harmless": 57,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 57,
+                        "undetected": 32
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "suspicious",
+            "confidence": 0.6101
+        },
+        "risk_assessment": {
+            "score": 40,
+            "level": "MEDIUM",
+            "reasons": [
+                "Threat detection indicators found (base score: 20)",
+                "2 URL(s) detected",
+                "ML model detected suspicious characteristics (confidence: 0.61)"
+            ],
+            "recommendation": "Exercise caution. Verify the sender and email links before taking action."
+        }
+    }
+}

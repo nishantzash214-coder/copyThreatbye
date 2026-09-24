@@ -1,0 +1,148 @@
+{
+    "report_id": "49fc04b7-08a6-4aaa-ab05-3e4924170db7",
+    "stored_at": "2026-09-06T15:06:51.893740+00:00",
+    "sha256": "240fb39c58ba3d93bc0bf0dc67043f6e45fbeebd9021abe0fe948316d3a51708",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-06T15:06:51.893274+00:00",
+            "filename": "gmail_1a06d93881b4d756.eml"
+        },
+        "email_information": {
+            "sender": "Facebook <reminders@facebookmail.com>",
+            "recipient": null,
+            "subject": "35 \u0905\u092a\u0921\u0947\u091f \u0926\u0947\u0916\u0947\u0902: Amit \u0914\u0930 \u0905\u0928\u094d\u092f \u0932\u094b\u0917\u094b\u0902 \u0938\u0947 \u091c\u0941\u0921\u093c\u0947",
+            "date": "Fri, 04 Sep 2026 10:59:38 -0700"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://www.facebook.com/nd/?notifications%2F&aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=primary_cta_view_notifications_text&rms=v2&irms=1&lfes=0",
+                "https://www.facebook.com/nd/?aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=cta_feed_2nd_text&rms=v2&irms=1&lfes=0",
+                "https://www.facebook.com/o.php?k=AfG7EuJfRAvOkD9uhel5cKuIE4c&u=61555008301948&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&ee=AQDiyHG0o3pqALmM17-1SueqDEgUdQaLStuFx6bC0Hw4FmXHv-U51dN8wJFZjb0yYcfQtPr__dsJ4bT7kqY",
+                "https://www.facebook.com/email_forward_notice/?mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "www.facebook.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=\"EYT/Z7zP\";       spf=pass (google.com: domain of reminders@facebookmail.com designates 69.171.232.137 as permitted sender) smtp.mailfrom=reminders@facebookmail.com;       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://www.facebook.com/nd/?notifications%2F&aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=primary_cta_view_notifications_text&rms=v2&irms=1&lfes=0",
+                    "domain": "www.facebook.com",
+                    "scheme": "https",
+                    "path": "/nd/",
+                    "has_https": true
+                },
+                {
+                    "url": "https://www.facebook.com/nd/?aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=cta_feed_2nd_text&rms=v2&irms=1&lfes=0",
+                    "domain": "www.facebook.com",
+                    "scheme": "https",
+                    "path": "/nd/",
+                    "has_https": true
+                },
+                {
+                    "url": "https://www.facebook.com/o.php?k=AfG7EuJfRAvOkD9uhel5cKuIE4c&u=61555008301948&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&ee=AQDiyHG0o3pqALmM17-1SueqDEgUdQaLStuFx6bC0Hw4FmXHv-U51dN8wJFZjb0yYcfQtPr__dsJ4bT7kqY",
+                    "domain": "www.facebook.com",
+                    "scheme": "https",
+                    "path": "/o.php",
+                    "has_https": true
+                },
+                {
+                    "url": "https://www.facebook.com/email_forward_notice/?mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b",
+                    "domain": "www.facebook.com",
+                    "scheme": "https",
+                    "path": "/email_forward_notice/",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "www.facebook.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 4,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "https://www.facebook.com/nd/?notifications%2F&aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=primary_cta_view_notifications_text&rms=v2&irms=1&lfes=0",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://www.facebook.com/nd/?aref=1788544774371811&medium=email&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&bcode=2.1788544776.Ab1JHDgWOl5Lb8wyTfjMeJ_9w98&n_m=anyadi2580%40gmail.com&n_sg=Q6bPBAMhl4uYJPdPtWXK0lnIqX2giirkc1qqVnoVf6Ug9GRTiA&lloc=cta_feed_2nd_text&rms=v2&irms=1&lfes=0",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://www.facebook.com/o.php?k=AfG7EuJfRAvOkD9uhel5cKuIE4c&u=61555008301948&mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b&ee=AQDiyHG0o3pqALmM17-1SueqDEgUdQaLStuFx6bC0Hw4FmXHv-U51dN8wJFZjb0yYcfQtPr__dsJ4bT7kqY",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    },
+                    {
+                        "url": "https://www.facebook.com/email_forward_notice/?mid=65aabbe5af711G37fbe4676b7cG65aac07f0f9e3G32b",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "www.facebook.com",
+                        "status": "success",
+                        "reputation": 49,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 29,
+                            "harmless": 61,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 61,
+                        "undetected": 29
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "benign",
+            "confidence": 0.5221
+        },
+        "risk_assessment": {
+            "score": 25,
+            "level": "LOW",
+            "reasons": [
+                "Threat detection indicators found (base score: 10)",
+                "4 URL(s) detected"
+            ],
+            "recommendation": "Some suspicious indicators were detected. Review the email carefully."
+        }
+    }
+}

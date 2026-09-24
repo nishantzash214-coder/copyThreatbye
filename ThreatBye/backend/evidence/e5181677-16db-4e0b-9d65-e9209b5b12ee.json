@@ -1,0 +1,69 @@
+{
+    "report_id": "e5181677-16db-4e0b-9d65-e9209b5b12ee",
+    "stored_at": "2026-09-16T08:54:39.128465+00:00",
+    "sha256": "12fd66f4760a53fc8109625cbf7cb8fa16ec87a4e4bf183aea58f836ba3c4133",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-16T08:54:39.127702+00:00",
+            "filename": "gmail_1a0a967e502369d9.eml"
+        },
+        "email_information": {
+            "sender": "Hiii Hlo <hiiihlo7521@gmail.com>",
+            "recipient": null,
+            "subject": "",
+            "date": "Wed, 16 Sep 2026 14:19:00 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [],
+            "ip_addresses": [],
+            "domains": []
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20251104 header.b=DeseY64Y;       arc=pass (i=1);       spf=pass (google.com: domain of hiiihlo7521@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=hiiihlo7521@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;       dara=pass header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [],
+            "domains": [],
+            "ip_addresses": [],
+            "total_urls": 0,
+            "total_domains": 0,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [],
+                "domains": [],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "benign",
+            "confidence": 0.5221
+        },
+        "risk_assessment": {
+            "score": 0,
+            "level": "SAFE",
+            "reasons": [],
+            "recommendation": "No significant suspicious indicators were detected."
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "report_id": "696e3207-c060-4feb-9fc9-b751ad8f2691",
+    "stored_at": "2026-09-02T09:21:46.016242+00:00",
+    "sha256": "f3ac2550cbd8a36960c29e8ed4923025f98b568dc6581d3c47ddfec0e9776090",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-02T09:21:46.015995+00:00",
+            "filename": "gmail_1a05c2dc1659c497.eml"
+        },
+        "email_information": {
+            "sender": "Unknown IITians <desk@unknowniitians.com>",
+            "recipient": null,
+            "subject": "You need at least 60% to PASS || End Term & OPPE 2",
+            "date": "Tue, 01 Sep 2026 14:24:47 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://www.unknowniitians.com/courses/5a3a402c-7c17-4649-aaae-7589f600955a"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "www.unknowniitians.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@unknowniitians.com header.s=ui header.b=IVozALMh;       arc=pass (i=3 spf=pass spfdomain=unknowniitians.com dkim=pass dkdomain=unknowniitians.com dmarc=pass fromdomain=unknowniitians.com);       spf=pass (google.com: domain of ui-announcements-21+bncbdhl7wxoymnbbyff3lkamgqes2ygooa@unknowniitians.com designates 209.85.220.77 as permitted sender) smtp.mailfrom=ui-announcements-21+bncBDHL7WXOYMNBBYFF3LKAMGQES2YGOOA@unknowniitians.com;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=unknowniitians.com;       dara=neutral header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://www.unknowniitians.com/courses/5a3a402c-7c17-4649-aaae-7589f600955a",
+                    "domain": "www.unknowniitians.com",
+                    "scheme": "https",
+                    "path": "/courses/5a3a402c-7c17-4649-aaae-7589f600955a",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "www.unknowniitians.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 1,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "status": "not_connected",
+                "message": "External threat-intelligence providers will be integrated in the next stage."
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "benign",
+            "confidence": 0.5767
+        },
+        "risk_assessment": {
+            "score": 15,
+            "level": "LOW",
+            "reasons": [
+                "Threat detection indicators found (base score: 10)",
+                "1 URL(s) detected"
+            ],
+            "recommendation": "Some suspicious indicators were detected. Review the email carefully."
+        }
+    }
+}

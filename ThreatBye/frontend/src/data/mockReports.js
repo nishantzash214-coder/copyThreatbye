@@ -1,0 +1,72 @@
+export const mockReports = [
+  {
+    id: '1',
+    caseId: 'FOR-2026-00842',
+    subject: 'Suspicious Email Investigation',
+    sender: 'example@gmail.com',
+    threatLevel: 'High Risk',
+    status: 'Completed',
+    date: '30 Aug 2026',
+    time: '10:42 AM',
+    ip: '192.168.1.1',
+    location: 'Lahore, Pakistan',
+    domain: 'suspicious-domain.com',
+    score: 92
+  },
+  {
+    id: '2',
+    caseId: 'FOR-2026-00841',
+    subject: 'Phishing Email Analysis',
+    sender: 'security-alert@update.com',
+    threatLevel: 'Medium Risk',
+    status: 'Completed',
+    date: '29 Aug 2026',
+    time: '09:15 AM',
+    ip: '103.45.22.11',
+    location: 'Moscow, Russia',
+    domain: 'update-secure-alert.com',
+    score: 65
+  },
+  {
+    id: '3',
+    caseId: 'FOR-2026-00840',
+    subject: 'Malware Attachment Analysis',
+    sender: 'invoice@billing-dept.com',
+    threatLevel: 'High Risk',
+    status: 'In Progress',
+    date: '28 Aug 2026',
+    time: '04:33 PM',
+    ip: '45.33.22.11',
+    location: 'Beijing, China',
+    domain: 'billing-dept-mail.com',
+    score: 88
+  },
+  {
+    id: '4',
+    caseId: 'FOR-2026-00839',
+    subject: 'Spam Email Investigation',
+    sender: 'marketing@promo-deals.com',
+    threatLevel: 'Low Risk',
+    status: 'Completed',
+    date: '27 Aug 2026',
+    time: '11:20 AM',
+    ip: '198.51.100.1',
+    location: 'New York, USA',
+    domain: 'promo-deals.com',
+    score: 15
+  },
+  {
+    id: '5',
+    caseId: 'FOR-2026-00838',
+    subject: 'Account Takeover Attempt',
+    sender: 'no-reply@login-verify.net',
+    threatLevel: 'Medium Risk',
+    status: 'Completed',
+    date: '26 Aug 2026',
+    time: '02:05 PM',
+    ip: '8.8.8.8',
+    location: 'Unknown',
+    domain: 'login-verify.net',
+    score: 55
+  }
+];

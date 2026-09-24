@@ -1,0 +1,109 @@
+{
+    "report_id": "db7a9351-0159-48f9-94b7-cbf13d2ef378",
+    "stored_at": "2026-09-06T15:23:35.894145+00:00",
+    "sha256": "70a02703628e866f51e170484f8fb39d94f0dd2a68eda969de869529e43b403e",
+    "report": {
+        "report_metadata": {
+            "report_type": "ThreatBye Email Forensic Report",
+            "generated_at": "2026-09-06T15:23:35.893700+00:00",
+            "filename": "gmail_1a05c2dc1659c497.eml"
+        },
+        "email_information": {
+            "sender": "Unknown IITians <desk@unknowniitians.com>",
+            "recipient": null,
+            "subject": "You need at least 60% to PASS || End Term & OPPE 2",
+            "date": "Tue, 01 Sep 2026 14:24:47 +0530"
+        },
+        "indicators_of_compromise": {
+            "urls": [
+                "https://www.unknowniitians.com/courses/5a3a402c-7c17-4649-aaae-7589f600955a"
+            ],
+            "ip_addresses": [],
+            "domains": [
+                "www.unknowniitians.com"
+            ]
+        },
+        "authentication": {
+            "authentication": {
+                "spf": "pass",
+                "dkim": "pass",
+                "dmarc": "pass",
+                "raw_authentication_results": [
+                    "mx.google.com;       dkim=pass header.i=@unknowniitians.com header.s=ui header.b=IVozALMh;       arc=pass (i=3 spf=pass spfdomain=unknowniitians.com dkim=pass dkdomain=unknowniitians.com dmarc=pass fromdomain=unknowniitians.com);       spf=pass (google.com: domain of ui-announcements-21+bncbdhl7wxoymnbbyff3lkamgqes2ygooa@unknowniitians.com designates 209.85.220.77 as permitted sender) smtp.mailfrom=ui-announcements-21+bncBDHL7WXOYMNBBYFF3LKAMGQES2YGOOA@unknowniitians.com;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=unknowniitians.com;       dara=neutral header.i=@gmail.com"
+                ]
+            },
+            "status": "authenticated",
+            "risk_points": 0,
+            "findings": []
+        },
+        "threat_intelligence": {
+            "urls_analyzed": [
+                {
+                    "url": "https://www.unknowniitians.com/courses/5a3a402c-7c17-4649-aaae-7589f600955a",
+                    "domain": "www.unknowniitians.com",
+                    "scheme": "https",
+                    "path": "/courses/5a3a402c-7c17-4649-aaae-7589f600955a",
+                    "has_https": true
+                }
+            ],
+            "domains": [
+                "www.unknowniitians.com"
+            ],
+            "ip_addresses": [],
+            "total_urls": 1,
+            "total_domains": 1,
+            "total_ip_addresses": 0,
+            "external_intelligence": {
+                "provider": "VirusTotal",
+                "status": "connected",
+                "urls": [
+                    {
+                        "url": "https://www.unknowniitians.com/courses/5a3a402c-7c17-4649-aaae-7589f600955a",
+                        "status": "not_found",
+                        "message": "URL was not found in VirusTotal."
+                    }
+                ],
+                "domains": [
+                    {
+                        "domain": "www.unknowniitians.com",
+                        "status": "success",
+                        "reputation": 0,
+                        "analysis_stats": {
+                            "malicious": 0,
+                            "suspicious": 0,
+                            "undetected": 34,
+                            "harmless": 56,
+                            "timeout": 0
+                        },
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "harmless": 56,
+                        "undetected": 34
+                    }
+                ],
+                "ip_addresses": []
+            }
+        },
+        "geolocation": {
+            "total_ips": 0,
+            "results": [],
+            "geolocation_provider": {
+                "status": "not_connected",
+                "message": "External IP geolocation will be integrated in a later stage."
+            }
+        },
+        "machine_learning": {
+            "prediction": "benign",
+            "confidence": 0.5767
+        },
+        "risk_assessment": {
+            "score": 15,
+            "level": "LOW",
+            "reasons": [
+                "Threat detection indicators found (base score: 10)",
+                "1 URL(s) detected"
+            ],
+            "recommendation": "Some suspicious indicators were detected. Review the email carefully."
+        }
+    }
+}
