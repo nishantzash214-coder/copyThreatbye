@@ -15,3 +15,7 @@ uvicorn==0.52.4
 requests
 python-dotenv
 scikit-learn
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
