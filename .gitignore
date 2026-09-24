@@ -17,3 +17,6 @@
 
 # Local databases
 **/*.sqlite3
+
+# Frontend build output
+ThreatBye/frontend/dist/
