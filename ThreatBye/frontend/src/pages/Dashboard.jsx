@@ -34,7 +34,7 @@ export default function Dashboard() {
   const checkGmail = async () => {
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/gmail/messages?max_results=10'
+        'https://copythreatbye.onrender.com/gmail/messages?max_results=10'
       );
 
       if (!response.ok) {

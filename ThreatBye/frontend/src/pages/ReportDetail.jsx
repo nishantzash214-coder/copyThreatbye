@@ -31,7 +31,7 @@ export default function ReportDetail() {
       setError('');
 
       const response = await fetch(
-        `http://127.0.0.1:8000/investigation/report/${caseId}`
+        `https://copythreatbye.onrender.com/investigation/report/${caseId}`
       );
 
       const data = await response.json();
@@ -60,7 +60,7 @@ export default function ReportDetail() {
       setVerifying(true);
 
       const response = await fetch(
-        `http://127.0.0.1:8000/investigation/verify/${caseId}`
+        `https://copythreatbye.onrender.com/investigation/verify/${caseId}`
       );
 
       const data = await response.json();

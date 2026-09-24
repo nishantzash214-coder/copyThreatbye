@@ -36,7 +36,7 @@ export default function EmailDetail() {
       setError('');
 
       const response = await fetch(
-        `http://127.0.0.1:8000/gmail/messages/${messageId}`
+        `https://copythreatbye.onrender.com/gmail/messages/${messageId}`
       );
 
       if (!response.ok) {
@@ -61,7 +61,7 @@ export default function EmailDetail() {
     setAnalysis(null);
 
     const response = await fetch(
-      `http://127.0.0.1:8000/gmail/analyze/${messageId}`
+      `https://copythreatbye.onrender.com/gmail/analyze/${messageId}`
     );
 
     const data = await response.json();

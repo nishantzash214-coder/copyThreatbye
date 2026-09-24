@@ -66,7 +66,7 @@ export default function UploadMail() {
       formData.append('file', file);
 
       const response = await fetch(
-        'http://127.0.0.1:8000/api/upload-email',
+        'https://copythreatbye.onrender.com/api/upload-email',
         {
           method: 'POST',
           body: formData

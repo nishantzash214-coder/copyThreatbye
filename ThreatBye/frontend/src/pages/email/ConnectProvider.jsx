@@ -6,7 +6,7 @@ export default function ConnectProvider() {
 
   const connectGmail = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/gmail/login');
+      const response = await fetch('https://copythreatbye.onrender.com/gmail/login');
 
       if (!response.ok) {
         throw new Error('Unable to start Gmail login');
